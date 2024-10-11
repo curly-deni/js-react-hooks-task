@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 
 import ThemeContext from './contexts';
 
 const Profile = () => {
-  // BEGIN (write your solution here)
+    // BEGIN (write your solution here)
+    let {theme} = useContext(ThemeContext);
+    // END
 
-  // END
-
-  return (
-    <article className={className}>
-      Текст для вкладки Profile
-    </article>
-  );
+    return (
+        <article className={theme.className}>
+            Текст для вкладки Profile
+        </article>
+    );
 };
 
 export default Profile;
